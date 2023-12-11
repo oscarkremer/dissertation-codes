@@ -1,0 +1,6 @@
+/plots/
+*.pdf
+.DS_Store
+build/
+dissertation_codes.egg-info/
+dist/
