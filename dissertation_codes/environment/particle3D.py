@@ -28,13 +28,13 @@ class Particle3D:
         self.zp_z = np.sqrt(ct.hbar / (2 * omegas[2] * self._m_))
         self.zp_pz = np.sqrt(omegas[2] * ct.hbar * self._m_ / 2)
         self.thermal_force_std_x = (
-            np.sqrt(2 * self.__gamma__ * self._m_ * ct.kb * T) / self.zp_px
+            np.sqrt(4 * self.__gamma__ * self._m_ * ct.kb * T) / self.zp_px
         )
         self.thermal_force_std_y = (
-            np.sqrt(2 * self.__gamma__ * self._m_ * ct.kb * T) / self.zp_py
+            np.sqrt(4 * self.__gamma__ * self._m_ * ct.kb * T) / self.zp_py
         )
         self.thermal_force_std_z = (
-            np.sqrt(2 * self.__gamma__ * self._m_ * ct.kb * T) / self.zp_pz
+            np.sqrt(4 * self.__gamma__ * self._m_ * ct.kb * T) / self.zp_pz
         )
 
     def step(self, states, control=0.0, delta_t=50e-2, bypass_noise=False):

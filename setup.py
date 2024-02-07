@@ -1,7 +1,10 @@
 from setuptools import setup, find_packages
+from dissertation_codes.simulation.simulation_parametric import cc_param
+
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
+
 
 import os
 
@@ -24,4 +27,5 @@ setup(
         "Operating System :: OS Independent",
     ],
     install_requires=["numpy", "pytest", "matplotlib", "seaborn"],
+    ext_modules=[cc_param.distutils_extension()],
 )

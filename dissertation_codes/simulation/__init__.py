@@ -1,8 +1,11 @@
 from .simulation import simulation
-from .simulation_filter import simulation_filter
+from .simulation_parametric import simulation_param
 from .simulation_n3d import simulation_n3d
 
+
+
 __all__ = [
-    "simulation",
-    "simulation_n3d"
+    "simulation_parametric",
+    "simulation_n3d",
+    "simulation_f"
 ]

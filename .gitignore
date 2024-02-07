@@ -4,3 +4,4 @@
 build/
 dissertation_codes.egg-info/
 dist/
+*/.npy
