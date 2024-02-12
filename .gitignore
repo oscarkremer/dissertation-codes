@@ -5,3 +5,4 @@ build/
 dissertation_codes.egg-info/
 dist/
 */.npy
+!data/Chapter 3/Parametric Cooling
